@@ -581,7 +581,7 @@ function logTransaction(txDetails) {
 
 // 🟢 SNIPPET: Load previous transaction logs from localStorage on startup
 window.addEventListener('load', () => {
-  const savedHistory = localStorage.getItem("arbTransactionHistory");
+  const savedHistory = localStorage.getItem("transactionHistory");
   if (savedHistory) {
     transactionHistory = JSON.parse(savedHistory);
     const logDiv = document.getElementById("log");
